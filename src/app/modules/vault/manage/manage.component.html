@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6 m-auto">
+    <h1 class="text-center display-4 my-4">File Uploads</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="custom-file mb-3">
+        <a class='btn btn-default' href='javascript:;' readonly>
+          <i class="fa fa-folder-open icon-align"></i>Choose File
+          <input type="file" name="field_name" (change)="onFileSelected($event)">
+        </a>
+      </div>
+      <input (click)="onUpload() " value="Submit " class="btn btn-primary btn-block ">
+    </form>
+  </div>
+</div>
